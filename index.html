@@ -49,6 +49,18 @@
       z-index: 9998;
       transition: transform 0.15s ease-out;
     }
+    /* ================= DISABLE CUSTOM CURSOR ON MOBILE ================= */
+@media (hover: none) and (pointer: coarse) {
+  body {
+    cursor: auto !important;
+  }
+
+  .cursor,
+  .cursor-follower {
+    display: none !important;
+  }
+}
+/* ================= END MOBILE CURSOR FIX ================= */
     }
     a {
       color: inherit;
